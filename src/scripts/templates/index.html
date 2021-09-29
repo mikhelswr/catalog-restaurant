@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catalog Restaurant" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="shortcut icon"
+      href="icon/icon-192x192.png"
+      type="image/x-icon"
+    />
+    <title>NomNom</title>
+    <link rel="preconnect" href="https://restaurant-api.dicoding.dev/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Menuju ke konten</a>
+    <!-- NAV -->
+    <nav>
+      <h1>NomNom</h1>
+
+      <button
+        aria-label="hamburger button"
+        class="hamburger hamburger--collapse"
+        type="button"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <ul class="nav_list">
+        <li><a href="#/explore">Explore</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.instagram.com/mikh.swr/">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main id="main">
+      <div class="loading">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <section id="explore"></section>
+    </main>
+    <footer>
+      <p>Copyright © 2021 - NomNom</p>
+    </footer>
+  </body>
+</html>

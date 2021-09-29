@@ -1,0 +1,145 @@
+/* DETAIL */
+.container_detail{
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container_detail:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+              0 2px 4px rgba(0,0,0,0.07), 
+              0 4px 8px rgba(0,0,0,0.07), 
+              0 8px 16px rgba(0,0,0,0.07),
+              0 16px 32px rgba(0,0,0,0.07), 
+              0 32px 64px rgba(0,0,0,0.07);
+              background-color: white;
+}
+.container_detail hr {
+  border: 2px solid #FFD369;
+  background-color: #FFD369;
+  margin-bottom: 10px;
+  transform: translateY(-5px);
+  width: 25px;
+}
+.container_detail p {
+  font-size: 0.8em;
+}
+.image_detail {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.image_detail img {
+  width: 100%;
+}
+.sub_image {
+  position: absolute;
+  bottom: 15px;
+  padding: 5px 30px;
+  background-color: #222831ea;
+}
+.title_detail { color: #eee; }
+.rating_detail { color: #FFD369; }
+.alamat_detail, .category_detail, 
+.foods_detail, .drinks_detail, .reviews_detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  padding: 10px 0;
+}
+.sub_category, .sub_foods, .sub_drinks { display: flex; flex-wrap: wrap; }
+.sub_category .child {
+  background-color: #FFD369;
+  font-weight: bold;
+  font-size: 0.9em;
+  width: min-content;
+  padding: 3px 5px;
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+.sub_foods .child, .sub_drinks .child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #393e46;
+  min-width: 100px;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0 5px 10px 0;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.sub_foods .child *, .sub_drinks .child * { color: #FFD369; }
+.sub_foods .child:hover, .sub_drinks .child:hover { 
+  background-color: #393e46;
+  transform: translateY(-2px); 
+}
+.listReview .child {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #393e46;
+  background-color: #FFD369;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.listReview .child .reviewer {
+  margin-bottom: 10px;
+}
+.review {
+  font-weight: 500;
+}
+hr.line {
+  border: 1px solid #393e46;
+  background-color: #393e46;
+  margin: 20px auto;
+  transform: translateY(0px);
+  width: 50%;
+}
+.fieldReview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.fieldReview input, .fieldReview button {
+  height: 50px;
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+}
+.fieldReview input {
+  background-color: #ffd36940;
+  padding: 0 10px;
+  outline: none;
+  transition: 0.3s;
+}
+.fieldReview input:focus {
+  border: 2px solid #FFD369;
+}
+.fieldReview button {
+  background-color: #FFD369;
+}
+
+@media (max-width: 768px) {
+  .container_detail { width: 65%; }
+  .container_detail {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+                background-color: white;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_detail { width: 85%; }
+}
+
+
+/* DETAIL */
